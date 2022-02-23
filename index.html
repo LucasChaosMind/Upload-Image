@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Photos</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="assests/css/normalize.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="assests/img/logo.png"/></div>
+            <ul>
+                <li><a href="">Github</a></li>
+                <li><a href="">Linkedin</a></li>
+                <li><a href="">Portifolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2 class="title">Photos com JS</h2>
+            <div class="insertArea">
+                <div class="add-photo">
+                    <a onclick="init()"><img src="assests/img/Upload.png"/></a>
+                    <input id="uploadPhoto" type="file" accept="image/*" id="image" multiple hidden>
+                </div>
+                <div class="add-desc">
+                    <form class="titulo">
+                        <input type="text" id="photo-title" placeholder="Titulo:" maxlength="30"/>
+                    </form>
+                    <form class="desc">
+                        <textarea name="Descrição" id="photo-desc" placeholder="Descrição:" rows="3" cols="25" maxlength="40"></textarea>
+                    </form>
+                </div>
+                <div class="salvar">
+                    <a onclick="startUp()"><img src="assests/img/GoData.png"></a>
+                </div>
+            </div>
+        </section>
+        <section class="photoUp">
+            <h2 class="title">Uploaded Images</h2>
+            <div class="container-photos">
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <script src="assests/js/app.js"></script>
+</body>
+</html>
